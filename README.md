@@ -67,7 +67,7 @@ var slider = new sliderUtil({
 });
 ```
 
-## 2.1 Slider Parameters
+### 2.1 Slider Parameters
 
 | Parameter         | Type                 | Default   | Description                                      |
 | ----------------- | -------------------- | --------- | ------------------------------------------------ |
@@ -81,7 +81,7 @@ var slider = new sliderUtil({
 | autoSlide         | boolean              | false     | 슬라이드 자동 전환 여부                          |
 | currentDeviceType | string               | 'desktop' | 슬라이드 Initialize 시점의 디바이스 타입         |
 
-## 2.2 Slider Methods
+### 2.2 Slider Methods
 
 | Methods                                | Description                                                                    |
 | -------------------------------------- | ------------------------------------------------------------------------------ |
