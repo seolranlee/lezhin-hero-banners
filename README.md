@@ -2,7 +2,7 @@
 
 > 데스크탑과 모바일 모두를 지원하는 히어로배너 UI모듈을 개발
 
-[Demo Github Page](https://seolranlee.github.io/hero-banners-ui-module/index.html)
+[Demo Github Page](https://seolranlee.github.io/lezhin-hero-banners-source/)
 
 ## Content
 
