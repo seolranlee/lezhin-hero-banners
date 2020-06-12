@@ -334,10 +334,6 @@ body main aside #hero-banner-list .indicator span.on {
     font-size: 18px;
     font-weight: 500;
   }
-  body main aside #hero-banner-list * {
-    -ms-touch-action: none;
-    touch-action: none;
-  }
   body main aside #hero-banner-list .slider-wrap {
     cursor: pointer;
   }
