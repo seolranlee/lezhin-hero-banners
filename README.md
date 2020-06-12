@@ -140,20 +140,24 @@ var slider = new sliderUtil({
 
   ```javascript
   /* .js/utils/sliderUtil.js */
-  that.sliderResize = function(currentDeviceType) {
-    sliderWidth = sliderWrap.parent().width();
-    selector.find("li").css("width", sliderWidth);
-    that.goToSlide(count + 1, 0);
 
-    /* 리사이징 후 디바이스 타입이 모바일이면 tocuh이벤트를 attach하고 네비게이터를 감춘다. 레이아웃과 리페인트 발생을 방지하기 위해 display속성을 변경해준다. */
+  that.deviceTypeInit = function(currentDeviceType) {
+    /* 디바이스 타입이 모바일이면 tocuh이벤트를 attach하고 네비게이터를 감춘다. 레이아웃과 리페인트 발생을 방지하기 위해 display속성을 변경해준다. */
     if (currentDeviceType === "mobile") {
       attachTouchEvent();
       $(".navigation").css("display", "none");
-      /* 리사이징 후 디바이스 타입이 데스크탑이면 tocuh이벤트를 detach하고 네비게이터를 표시한다.*/
+      /* 디바이스 타입이 데스크탑이면 tocuh이벤트를 detach하고 네비게이터를 표시한다.*/
     } else {
       detachTouch();
       $(".navigation").css("display", "block");
     }
+  };
+
+  that.sliderResize = function(currentDeviceType) {
+    sliderWidth = sliderWrap.parent().width();
+    selector.find("li").css("width", sliderWidth);
+    that.goToSlide(count + 1, 0);
+    deviceTypeInit(currentDeviceType);
   };
   ```
 

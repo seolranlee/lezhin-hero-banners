@@ -184,7 +184,7 @@ var sliderUtil = (function($) {
       that.attachEvent(currentDeviceType);
       that.deviceTypeInit(currentDeviceType);
     };
-    that.attachEvent = function(currentDeviceType) {
+    that.attachEvent = function() {
       sliderWidth = sliderWrap.width();
       selector.find("li").css("width", sliderWidth);
 
