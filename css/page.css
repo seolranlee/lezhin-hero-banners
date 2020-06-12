@@ -211,6 +211,14 @@ body main aside #hero-banner-list {
   margin: 0 auto;
 }
 
+body main aside #hero-banner-list * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
 body main aside #hero-banner-list .hero-slides {
   position: relative;
   overflow: hidden;
