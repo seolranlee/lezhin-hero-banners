@@ -38,6 +38,14 @@ lezhin-hero-banners
 └── index.html
 ```
 
+#### js/page.js
+
+슬라이더를 초기화 하기 전에 api와 통신해 슬라이더 리스트에 들어갈 데이터 이미지 url을 가져오고 돔을 구성하는 로직 구현. 리사이징 이벤트 발생시 현재 device type을 체크하고 slider.sliderResize를 호출한다.
+
+#### js/utils/sliderUitl.js
+
+히어로 배너 슬라이더 모듈에 관련된 로직 구현.
+
 ---
 
 <h2 id="installation">
