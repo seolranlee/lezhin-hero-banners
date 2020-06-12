@@ -201,9 +201,6 @@ var sliderUtil = (function($) {
         var idx = $(this).index() + 1;
         that.goToSlide(idx);
       });
-
-      if (currentDeviceType === "mobile") attachTouchEvent();
-      else detachTouch();
     };
     that.moveNext = function(event) {
       if (event) {
