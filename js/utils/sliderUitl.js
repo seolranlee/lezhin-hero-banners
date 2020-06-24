@@ -1,4 +1,4 @@
-var sliderUtil = (function($) {
+var sliderUtil = (function() {
   var defaults = {
     selector: null,
     indicator: true,
@@ -384,4 +384,4 @@ var sliderUtil = (function($) {
   };
 
   return sliderUtil;
-})(jQuery);
+})();
